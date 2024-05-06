@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Home budget</h1>
+    <form id="incomes-form">
+      <input type="text" placeholder="Income name" name="incomeName" minlength="3" maxlength="50" required />
+      <input type="number" step="0.01" min="0.01" required placeholder="Income amount" name="incomeAmount" />
+      <button type="submit">Add</button>
+    </form>
+    <ul id="incomes-list"></ul>
+    <p>Total incomes amount: <span id="total-incomes">0</span> EUR</p>
+    <script src="main.js" type="module"></script>
+  </body>
+</html>
